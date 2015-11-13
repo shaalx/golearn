@@ -35,12 +35,21 @@ func main() {
 			if err == "panic2" {
 				fmt.Println("panic is panic2")
 			}
+			defer func() {
+				if err := recover(); nil != err {
+					fmt.Println(err)
+					if err == "panic3" {
+						fmt.Println("panic is panic3")
+					}
+				}
+			}()
+			Do3()
 
 			fmt.Println("\n-----------------end in recover")
 		}
 	}()
 
-	Do3()
+	// Do3()
 	Do2()
 	fmt.Println("\n-----------------end")
 }
