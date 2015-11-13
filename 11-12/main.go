@@ -100,3 +100,40 @@ func (u *User) Change(n string) (bool, int) {
 type IUser interface {
 	Change(n string) (bool, int)
 }
+
+func A() {
+	var a interface{}
+	a = User{Name: "jj"}
+
+}
+
+func func_name(a ...interface{}) {
+	l := len(a)
+	switch a.(type) {
+	}
+	func_name("sss", "sss")
+	s()
+	err := recover()
+	if err != nil {
+
+	}
+}
+
+func s() {
+	panic("ssss")
+	slice := make([]int, 9, 90)
+	m := make(map[string]interface{})
+	c := make(chan bool, 10)
+	for i := range c {
+
+	}
+	close(c)
+	for {
+		select {
+		case i := <-c:
+			fmt.Println(i)
+		case c <- true:
+			fmt.Println("in")
+		}
+	}
+}
