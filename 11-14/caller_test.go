@@ -15,4 +15,6 @@ func AssertEqual(exp interface{}, act interface{}, t *testing.T) {
 
 func TestAssert(t *testing.T) {
 	AssertEqual("exp", "act", t)
+	mp := make(map[string]interface{}, 10)
+	t.Log(mp, len(mp))
 }

@@ -18,3 +18,8 @@ func main() {
 	log.Println(a, b, c)
 	time.Sleep(1e9)
 }
+
+type Ibase interface {
+	Do()
+	Doo()
+}
