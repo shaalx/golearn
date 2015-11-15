@@ -1,6 +1,6 @@
 # Go pkg
 
-[stdlib](http://stdlib-shaalx.myalauda.cn/)
+查看中文翻译_go1.3[stdlib](http://stdlib-shaalx.myalauda.cn/)
 
 	 fmt  格式化
 	 unicode 编码
