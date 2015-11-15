@@ -83,7 +83,7 @@
 
 ### chan
 
-请(参考)[https://github.com/everfore/gotest/tree/master/channel]
+(参考)[https://github.com/everfore/gotest/tree/master/channel]
 
 	chan是同步的，带缓冲区的chan是非阻塞的，不带缓冲区的chan是阻塞的；
 	从closed chan中读是非阻塞的，往closed chan中写会panic。
@@ -144,7 +144,7 @@
 	// 若不注释println一行，每次时钟周期到了会打印一行，CPU使用率同上。
 
 
-	**阻塞的写法**
+**阻塞的写法**
 
 		for {
 			cin, ok := <-c
