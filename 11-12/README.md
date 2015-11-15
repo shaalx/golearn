@@ -42,14 +42,14 @@ Go的变量都有默认值。
 
 ##	其它类型
 
-	名称		解释			初始化
-	array		数组			arr := [...]int{1,2,3}
-	slice		切片，动态数组	slc := []int{1,2,3} // slc := make([]int, 3, 6)
-	map 		键值对映射		mp := make(map[string]int,10)
-	struct		结构体			stt := &User{Name:"shaalx"}
-	chan		通道			c := make(chan bool, 3)
-	interface	接口			*
-	func		函数也可以作为变量 *
+	名称			解释			初始化
+	array		数组				arr := [...]int{1,2,3}
+	slice		切片，动态数组		slc := []int{1,2,3} // slc := make([]int, 3, 6)
+	map 		键值对映射			mp := make(map[string]int,10)
+	struct		结构体				stt := &User{Name:"shaalx"}
+	chan		通道				c := make(chan bool, 3)
+	interface	接口				*
+	func		函数也可以作为变量 	*
 
 ##	关键字
 
@@ -62,6 +62,7 @@ Go的变量都有默认值。
 	select 非阻塞地选择chan
 	switch 分支，可选类型有string,int,string,type等等
 	go 开启一个goruntine
-	defer 延迟执行,(栈接口FILO)
+	defer 延迟执行,(栈结构FILO)
+	panic 引发恐慌
 	recover 恢复panic
 	
