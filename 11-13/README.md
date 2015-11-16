@@ -83,7 +83,7 @@
 
 ### chan
 
-请[参考](https://github.com/everfore/gotest/tree/master/channel)
+请__[参考](https://github.com/everfore/gotest/tree/master/channel)__
 
 	chan是同步的，带缓冲区的chan是非阻塞的，不带缓冲区的chan是阻塞的；
 	从closed chan中读是非阻塞的，往closed chan中写会panic。
